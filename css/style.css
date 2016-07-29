@@ -5971,5 +5971,11 @@ a > img.fh5co-align-center {
   display: block;
   margin-left: auto;
   margin-right: auto; }
-
+.table-border {
+  border: 1px solid black;
+}
+.table-header {
+  background-color: #FBB040;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
