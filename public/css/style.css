@@ -5878,8 +5878,8 @@ pre {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000;
-  opacity: .3;
+  background: #fff;
+  opacity: .1;
   z-index: 8; }
 .owl-carousel-fullwidth .item img {
   max-width: 100%; }
