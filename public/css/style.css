@@ -5878,8 +5878,8 @@ pre {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000;
-  opacity: .3;
+  /*background: #000;
+  opacity: .3;*/
   z-index: 8; }
 .owl-carousel-fullwidth .item img {
   max-width: 100%; }
@@ -5899,7 +5899,8 @@ pre {
   color: #fff;
   margin: 0;
   padding: 0;
-  font-weight: 100; }
+  font-weight: 100; 
+  text-shadow: 2px 2px #000;}
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
   font-weight: 400;
   margin-top: 80px;
