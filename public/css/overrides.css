@@ -1,23 +1,16 @@
-
-.owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead,
-.owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
-    text-shadow: 2px 2px #000;
-}
-
 .owl-carousel-fullwidth .item .fh5co-overlay {
-    opacity: .1;
-
+    opacity: .3;
 }
 
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead, .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
     font-weight: 100;
-    text-shadow: 2px 2px #000;
+    text-shadow: 1px 1px #000;
+    color: #FFF;
 }
 
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
     font-weight: 400;
     margin-top: 80px;
-
 }
 
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
@@ -49,15 +42,10 @@
     border-top: 0px;
 }
 
-.fh5co-lead {
-    color: #FFF;
-}
-
 .author {
     color: #FFF;
 }
 
 #fh5co-clients {
     padding: 1em 0;
-
 }
