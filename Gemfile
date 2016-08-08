@@ -4,6 +4,6 @@ gem "tilt"
 gem "cuba"
 gem "mail"
 
-group :developmend do
+group :development do
   gem 'pry'
 end
