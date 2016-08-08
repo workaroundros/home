@@ -1,10 +1,14 @@
+$:.push File.expand_path("lib", File.dirname(__FILE__))
+
 require "cuba" 
 require "cuba/render" 
 require 'tilt'
 require "erb"
 require 'json'
+require 'workaround/helper'
 
-Cuba.plugin(Cuba::Render)
+Cuba.plugin Cuba::Render
+Cuba.plugin Workaround::App::Helper
 Cuba.use Rack::Static, :root => "public", :urls => ["/js", "/css", "/images", "/fonts"]
 
 Cuba.define do
@@ -19,15 +23,33 @@ Cuba.define do
   end
 
   on post do
+
     on "contact" do
+      res.headers['Content-Type'] = "application/json"
+      response_body = {}
 
       on param("name"), param("email"), param("size"), param("message") do |name, email, size, message|
-        res.write "#{user}:#{pass}"
+        form = validate_form({
+          :name => name,
+          :email => email,
+          :size => size,
+          :message => message
+        })
+        if form.valid?
+          form.mail.deliver!
+          status = 200
+          res.headers['X-App-Response'] = "OK"
+        else
+          status = 422
+          res.headers['X-App-Response'] = "ERROR"
+          response_body[:error] = form.errors
+        end
+        res.status = status
+        res.write response_body.to_json
       end
 
       on true do
-        res.status = 422
-        response = {:error => "Completa todos los datos."}.to_json
+        response = {:error => "Todos los campos son requeridos"}.to_json
         res.write response
       end
     end

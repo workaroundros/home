@@ -218,23 +218,23 @@
         <div class="fh5co-spacer fh5co-spacer-md" id="write"></div>
         <div class="row">
           <h1 class="fh5co-section-lead" style="margin-bottom: 50px;">Me gustaría conocer la oficina</h1>
-          <form action="#" method="post">
+          <form action="/contact" method="post">
             <div class="col-md-5">
               <div class="form-group">
                 <label for="name" class="sr-only">Nombre</label>
-                <input placeholder="Name" id="name" type="text" class="form-control input-lg">
+                <input placeholder="Name" id="name" name="name" type="text" class="form-control input-lg">
               </div>  
             </div>
             <div class="col-md-5">
               <div class="form-group">
                 <label for="email" class="sr-only">Email</label>
-                <input placeholder="Email" id="email" type="email" class="form-control input-lg">
+                <input placeholder="Email" id="email" name="email" type="email" class="form-control input-lg">
               </div>  
             </div>
             <div class="col-md-2">
               <div class="form-group">
                 <label for="size" class="sr-only">Talle</label>
-                <select class="form-control input-lg" id="job">
+                <select class="form-control input-lg" id="size" name="size">
                   <option>--Talle--</option>
                   <option>XS</option>
                   <option>S</option>
@@ -246,7 +246,7 @@
             <div class="col-md-12">
               <div class="form-group">
                 <label for="gender" class="sr-only">A que te dedicas</label>
-                <textarea placeholder="Contanos a que te dedicas :)" id="message" class="form-control input-lg" rows="3"></textarea>
+                <textarea placeholder="Contanos a que te dedicas :)" id="message" name="message" class="form-control input-lg" rows="3"></textarea>
               </div>
             </div>
             <div class="col-md-offset-3 col-md-6">
