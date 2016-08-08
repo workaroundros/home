@@ -1,0 +1,51 @@
+.owl-carousel-fullwidth .item .fh5co-overlay {
+    opacity: .3;
+}
+
+.owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead, .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
+    font-weight: 100;
+    text-shadow: 1px 1px #000;
+    color: #FFF;
+}
+
+.owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+.owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.fh5co-lead {
+    color: #FFF;
+}
+
+.author {
+    color: #FFF;
+}
+
+.table-border {
+    border: 1px solid black;
+}
+
+.table-header {
+    background-color: #FBB040;
+    font-weight: bold;
+}
+
+.table-content {
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-top: 0px;
+}
+
+.author {
+    color: #FFF;
+}
+
+#fh5co-clients {
+    padding: 1em 0;
+}
