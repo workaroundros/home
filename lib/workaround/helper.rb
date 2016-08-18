@@ -1,6 +1,5 @@
 require 'mail'
 require 'httparty'
-require 'pry'
 
 module Workaround
   module App
