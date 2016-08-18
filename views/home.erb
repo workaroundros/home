@@ -215,131 +215,13 @@
             </div>
           </div>
         </div>
-        <div class="fh5co-spacer fh5co-spacer-md" id="write"></div>
-        <div class="row">
-          <h1 class="fh5co-section-lead" style="margin-bottom: 50px;">Me gustaría conocer la oficina</h1>
-          <form action="/contact" method="post">
-            <div class="col-md-5">
-              <div class="form-group">
-                <label for="name" class="sr-only">Nombre</label>
-                <input placeholder="Name" id="name" name="name" type="text" class="form-control input-lg">
-              </div>  
-            </div>
-            <div class="col-md-5">
-              <div class="form-group">
-                <label for="email" class="sr-only">Email</label>
-                <input placeholder="Email" id="email" name="email" type="email" class="form-control input-lg">
-              </div>  
-            </div>
-            <div class="col-md-2">
-              <div class="form-group">
-                <label for="size" class="sr-only">Talle</label>
-                <select class="form-control input-lg" id="size" name="size">
-                  <option>--Talle--</option>
-                  <option>XS</option>
-                  <option>S</option>
-                  <option>M</option>
-                  <option>L</option>
-                </select>
-              </div>  
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="gender" class="sr-only">A que te dedicas</label>
-                <textarea placeholder="Contanos a que te dedicas :)" id="message" name="message" class="form-control input-lg" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="col-md-offset-3 col-md-6">
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary " value="Enviar consulta">
-              </div>  
-            </div>
-          </form>
-        </div>
+        <%= render_view('form') %>
       </div>
     </div>
   </div>
 </div>
 
-
-<div class="fh5co-spacer fh5co-spacer-lg"></div>    
-<div class="container" id="fh5co-products">
-  <div class="row text-left" id="people">
-    <div class="col-md-8">
-      <h2 class="fh5co-section-lead">¿Quiénes somos?</h2>
-    </div>
-    <div class="fh5co-spacer fh5co-spacer-md"></div>
-  </div>
-  <div class="row text-center">
-    <div class="col-md-offset-1 col-md-2 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-      <div class="fh5co-product">
-        <img src="images/uke.jpg" class="img-responsive img-rounded to-animate">
-        <h4>Uke</h4>
-        <div class="fh5co-footer-widget">
-          <ul class="fh5co-social">
-            <li><a href="https://github.com/eugeniol" target="_blank"><i class="icon-github"></i></a></li>
-            <li><a href="https://www.facebook.com/elattanzio" target="_blank"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://ar.linkedin.com/in/elattanzio" target="_blank"><i class="icon-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-      <div class="fh5co-product">
-        <img src="images/abo.jpg" class="img-responsive img-rounded to-animate">
-        <h4>Aboyón</h4>
-        <div class="fh5co-footer-widget">
-          <ul class="fh5co-social">
-            <li><a href="https://github.com/aboyon" target="_blank"><i class="icon-github"></i></a></li>
-            <li><a href="https://www.instagram.com/aboyon/" target="_blank"><i class="icon-instagram"></i></a></li>
-            <li><a href="https://ar.linkedin.com/in/jorgedavidsilveira/es" target="_blank"><i class="icon-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="visible-sm-block visible-xs-block clearfix"></div>
-    <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-      <div class="fh5co-product">
-        <img src="images/guido2.jpeg" class="img-responsive img-rounded to-animate">
-        <h4>Guido</h4>
-        <div class="fh5co-footer-widget">
-          <ul class="fh5co-social">
-            <li><a href="https://github.com/GuidoAlloatti" target="_blank"><i class="icon-github"></i></a></li>
-            <li><a href="https://www.facebook.com/guido.alloatti" target="_blank"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://ar.linkedin.com/in/guidoalloatti" target="_blank"><i class="icon-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-      <div class="fh5co-product">
-        <img src="images/leo.jpg" class="img-responsive img-rounded to-animate">
-        <h4>Leo</h4>
-        <div class="fh5co-footer-widget">
-          <ul class="fh5co-social">
-            <li><a href="https://github.com/leotioni" target="_blank"><i class="icon-github"></i></a></li>
-            <li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-            <li><a href="https://ar.linkedin.com/in/leotioni" target="_blank"><i class="icon-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-2 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-      <div class="fh5co-product">
-        <img src="images/gonzo.jpg" class="img-responsive img-rounded to-animate">
-        <h4>Gonzo</h4>
-        <div class="fh5co-footer-widget">
-          <ul class="fh5co-social">
-            <li><a href="https://www.github.com/GonzoGhanem"><i class="icon-github"></i></a></li>
-            <li><a href="https://www.twitter.com/GonzaGhanemOK" target="_blank"><i class="icon-twitter"></i></a></li>
-            <li><a href="https://ar.linkedin.com/in/gonzalo-h-ghanem-4b144310" target="_blank"><i class="icon-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
+<%= render_view('about') %>
 
 <div class="fh5co-spacer fh5co-spacer-lg"></div>
 

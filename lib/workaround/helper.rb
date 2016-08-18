@@ -1,8 +1,14 @@
 require 'mail'
+require 'httparty'
+require 'pry'
 
 module Workaround
   module App
     module Helper
+      def render_view(view)
+        ERB.new(File.read("views/#{view}.erb")).result.to_s
+      end
+
       def valid_email?(email)
         email =~ /\A([\w+\-]\.?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
       end
@@ -27,6 +33,10 @@ module Workaround
             :enable_starttls_auto => true
           }
         end
+        response = HTTParty.post(
+          "https://www.google.com/recaptcha/api/siteverify?secret=#{ENV['CAPTCHA_SECRET']}&response=#{params[:captcha]}"
+        )
+        errors << 'Falto el captcha' unless response && response["success"]
         form = OpenStruct.new(
           :valid?   => errors.empty?,
           :errors   => errors,
@@ -34,7 +44,7 @@ module Workaround
           :mail  => Mail.new({
             :from =>     ENV['NOTIFICATION_FROM_MAIL_ACCOUNT'],
             :to =>       ENV['NOTIFICATION_TO_MAIL_ACCOUNT'],
-            :cc =>       ENV['NOTIFICATION_RECIPIENTS'],
+            # :cc =>       ENV['NOTIFICATION_RECIPIENTS'],
             :subject =>  'Mensaje desde pagina',
             :body =>     "#{params[:name]} (#{params[:email]}), escribio este mensaje: \n #{params[:message]}"
           })

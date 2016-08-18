@@ -28,12 +28,14 @@ Cuba.define do
       res.headers['Content-Type'] = "application/json"
       response_body = {}
 
-      on param("name"), param("email"), param("size"), param("message") do |name, email, size, message|
+      on param("name"), param("email"), param("size"), param("message"), param('g-recaptcha-response') do |name, email, size, message, captcha|
+        
         form = validate_form({
           :name => name,
           :email => email,
           :size => size,
-          :message => message
+          :message => message,
+          :captcha => captcha
         })
         if form.valid?
           form.mail.deliver!
@@ -49,6 +51,8 @@ Cuba.define do
       end
 
       on true do
+        res.headers['X-App-Response'] = "ERROR"
+        res.status = 422
         response = {:error => "Todos los campos son requeridos"}.to_json
         res.write response
       end

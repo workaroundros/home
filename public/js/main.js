@@ -214,6 +214,22 @@
       }, 2000);
     });
 
+    $('#contact_form').on('submit', function(e){
+        e.preventDefault();
+        $.post('/contact', $(this).serialize()).success(function(response){
+          $(".modal-title").html("Consulta enviada");
+          $("#modal-body-text").html("Gracias por tu mensaje, a la brevedad nos contactaremos con vos para coordinar una visita a la oficina");
+          show_modal();
+        }).error(function(err){
+          $(".modal-title").html("Error");
+          $("#modal-body-text").html(err.responseJSON.error);
+          show_modal();
+        });
+
+      });
+      function show_modal() {
+        $("#confirmation_modal").modal('toggle');
+      };
   });
 
 
