@@ -31,13 +31,13 @@ module Workaround
           :valid?   => errors.empty?,
           :errors   => errors,
           :params => params,
-          :mail  => Mail.new {
-            from     ENV['NOTIFICATION_FROM_MAIL_ACCOUNT'],
-            to       ENV['NOTIFICATION_TO_MAIL_ACCOUNT']
-            cc       ENV['NOTIFICATION_RECIPIENTS']
-            subject  'Mensaje desde pagina'
-            body     "#{params[:name]} (#{params[:email]}), escribio este mensaje: \n #{params[:message]}"
-          }
+          :mail  => Mail.new({
+            :from =>     ENV['NOTIFICATION_FROM_MAIL_ACCOUNT'],
+            :to =>       ENV['NOTIFICATION_TO_MAIL_ACCOUNT'],
+            :cc =>       ENV['NOTIFICATION_RECIPIENTS'],
+            :subject =>  'Mensaje desde pagina',
+            :body =>     "#{params[:name]} (#{params[:email]}), escribio este mensaje: \n #{params[:message]}"
+          })
         )
       end
     end
