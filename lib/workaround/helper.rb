@@ -45,7 +45,7 @@ module Workaround
             :to =>       ENV['NOTIFICATION_TO_MAIL_ACCOUNT'],
             # :cc =>       ENV['NOTIFICATION_RECIPIENTS'],
             :subject =>  'Mensaje desde pagina',
-            :body =>     "#{params[:name]} (#{params[:email]}), escribio este mensaje: \n #{params[:message]}"
+            :body =>     "#{params[:name]} (#{params[:email]}- #{params[:phone]}), escribio este mensaje: \n #{params[:message]}"
           })
         )
       end

@@ -28,12 +28,13 @@ Cuba.define do
       res.headers['Content-Type'] = "application/json"
       response_body = {}
 
-      on param("name"), param("email"), param("size"), param("message"), param('g-recaptcha-response') do |name, email, size, message, captcha|
+      on param("name"), param("email"), param("size"), param("message"), param("phone"), param('g-recaptcha-response') do |name, email, size, message, phone, captcha|
         
         form = validate_form({
           :name => name,
           :email => email,
           :size => size,
+          :phone => phone,
           :message => message,
           :captcha => captcha
         })
