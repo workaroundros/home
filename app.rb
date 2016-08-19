@@ -9,7 +9,7 @@ require 'workaround/helper'
 
 Cuba.plugin Cuba::Render
 Cuba.plugin Workaround::App::Helper
-Cuba.use Rack::Static, :root => "public", :urls => ["/js", "/css", "/images", "/fonts"]
+Cuba.use Rack::Static, :root => "public", :urls => ["/js", "/css", "/images", "/fonts", "/google7d901f8d08713472.html"]
 
 Cuba.define do
   on get do
