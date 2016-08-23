@@ -5364,7 +5364,9 @@ h1, h2, h3, h4, h5, h6 {
   /*font-size: 20px;*/
   text-transform: uppercase;
   letter-spacing: 2px;
-  line-height: 22px; }
+  line-height: 22px; 
+  text-align: center;
+}
 
 .fh5co-section-sub-lead {
   font-size: 22px;
@@ -5613,7 +5615,7 @@ pre {
     width: 70%; } }
 
 #fh5co-clients {
-  padding: 3em 0;
+  padding: 1em 0;
   background: #FBB040; }
 #fh5co-clients .fh5co-client-logo {
   text-align: center;
@@ -5983,6 +5985,10 @@ a > img.fh5co-align-center {
   font-weight: bold;
   border: 1px solid black;
   border-top: 0px;
+}
+#orange {
+    background: #FBB040 !important;
+    margin-bottom: 22px;
 }
 /*# sourceMappingURL=style.css.map */
 
