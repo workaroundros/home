@@ -5298,10 +5298,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #FBB040; }
 #fh5co-header .navbar-brand {
   font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 20px;
+  letter-spacing: 4px;
+  font-size: 30px;
   font-family: "Montserrat", arial, sans-serif;
   color: #000; }
+#fh5co-header .navbar-brand .orange {
+  color: #FBB040 !important; }
 #fh5co-header .navbar-brand:hover {
   color: #ccc; }
 
@@ -5612,7 +5614,12 @@ pre {
   width: 50%; }
 @media screen and (max-width: 768px) {
   .fh5co-feature .fh5co-feature-text {
-    width: 70%; } }
+    width: 70%; } 
+  }
+@media screen and (max-width: 768px) {
+  .fh5co-section-lead {
+    line-height: 30px; } 
+  }
 
 #fh5co-clients {
   padding: 1em 0;
@@ -5752,7 +5759,9 @@ pre {
   height: 80px; }
 @media screen and (max-width: 768px) {
   .fh5co-spacer-md {
-    height: 30px; } }
+    height: 30px; }
+  .fh5co-spacer-md#orange{
+    height: 140px; } }
 
 .fh5co-spacer-sm {
   height: 50px; }
@@ -5874,6 +5883,18 @@ pre {
   background-size: cover;
   background-position: top left;
   position: relative; }
+.owl-carousel-fullwidth #first.item {
+  background-image:url('/images/pics/FullSizeRender13.jpg');
+  }
+.owl-carousel-fullwidth #second.item {
+  background-image:url('/images/pics/FullSizeRender8.jpg');
+  }
+.owl-carousel-fullwidth #third.item {
+  background-image:url('/images/pics/FullSizeRender 15.jpg');
+  }
+.owl-carousel-fullwidth #fourth.item {
+  background-image:url('/images/mesa-area-copy.jpg');
+  }
 .owl-carousel-fullwidth .item .fh5co-overlay {
   position: absolute;
   top: 0;
