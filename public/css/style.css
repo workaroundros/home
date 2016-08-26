@@ -5886,11 +5886,17 @@ pre {
 .owl-carousel-fullwidth #first.item {
   background-image:url('/images/pics/FullSizeRender13.jpg');
   }
+@media (max-width: 768px) {
+  .owl-carousel-fullwidth #first.item {
+    background-image:url('/images/pics/FullSizeRender13-small.jpg');
+  }
+}
+
 .owl-carousel-fullwidth #second.item {
   background-image:url('/images/pics/FullSizeRender8.jpg');
   }
 .owl-carousel-fullwidth #third.item {
-  background-image:url('/images/pics/FullSizeRender 15.jpg');
+  background-image:url('/images/workaround-space15.jpg');
   }
 .owl-carousel-fullwidth #fourth.item {
   background-image:url('/images/mesa-area-copy.jpg');
