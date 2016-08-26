@@ -24,6 +24,13 @@
       }
       
     });
+    $('body').on('click', '.js-fh5co-nav-toggle-secondary', function(){
+      if ( $('#fh5co-navbar').is(':visible') ) {
+        $('.fh5co-nav-toggle').removeClass('active');  
+      } else {
+        $('.fh5co-nav-toggle').addClass('active'); 
+      }
+    })
   };
 
   var owlCrouselFeatureSlide = function() {
