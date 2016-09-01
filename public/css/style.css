@@ -6006,11 +6006,16 @@ a > img.fh5co-align-center {
 .table-header {
   background-color: #FBB040;
   font-weight: bold;
+  border-radius: 50px;
+  margin-bottom: 24px;
+  height: 79px;
+  padding: 1px;
+  border: 0;
 }
 .table-content {
   padding: 10px;
   font-weight: bold;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   border-top: 0px;
 }
 #orange {
@@ -6022,3 +6027,92 @@ a > img.fh5co-align-center {
 .main-content-margin {
   margin-top: 100px;
 }
+
+@media (max-width: 768px) {
+  .text-header {
+    color: white;
+    padding-top: 18px;
+    font-family: "Montserrat", arial, sans-serif;
+    font-size: 24px;
+  }
+
+  .table-header {
+    font-weight: 500;
+    border-radius: 0;
+    margin-bottom: 10px;
+    height: 60px;
+    border: 0;
+  } 
+
+  .service-item {
+    width: 20px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 5%;
+  }
+
+  .service-text {
+    display: inline-block;
+    vertical-align: 40%;
+  }
+
+  .services {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    font-family: "Montserrat", arial, sans-serif;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 20px;
+    /*border-bottom: 1px solid orange;*/
+  }
+}
+
+@media (min-width: 768px) {
+  .text-header {
+    color: white;
+    padding-top: 25px;
+    font-family: "Montserrat", arial, sans-serif;
+    font-size: 36px;
+  }
+
+  .table-header {
+    font-size: 18px !important;
+  }
+
+  .service-item {
+    width: 10px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10%;
+  }
+
+  .service-text {
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: 15%;
+  }
+
+  .services {
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+    font-family: "Montserrat", arial, sans-serif;
+    margin-left: 50px;
+    padding-left: 20px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 30px;
+    /*border-bottom: 1px solid orange;*/
+  }
+}
+
+.no-bottom-padding { 
+  /*padding-bottom: 0; */
+}
+.orange-item { border-left: 15px solid #F5876E; }
+.blue-item   { border-left: 15px solid #61A8DC; }
+.green-item  { border-left: 15px solid #8EBD40; }
+.purple-item { border-left: 15px solid #988CC3; }
+.gold-item   { border-left: 15px solid #D8C86E; }
+.silver-item { border-left: 15px solid #CCC;    }
