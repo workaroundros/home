@@ -5884,22 +5884,22 @@ pre {
   background-position: top left;
   position: relative; }
 .owl-carousel-fullwidth #first.item {
-  background-image:url('/images/pics/FullSizeRender13.jpg');
+  background-image:url('/images/home/w@-mesa.jpg');
   }
 @media (max-width: 768px) {
   .owl-carousel-fullwidth #first.item {
-    background-image:url('/images/pics/FullSizeRender13-small.jpg');
+    background-image:url('/images/home/w@-mesa-small.jpg');
   }
 }
 
 .owl-carousel-fullwidth #second.item {
-  background-image:url('/images/pics/FullSizeRender8.jpg');
+  background-image:url('/images/home/w@-view.jpg');
   }
 .owl-carousel-fullwidth #third.item {
-  background-image:url('/images/workaround-space15.jpg');
+  background-image:url('/images/home/w@-space.jpg');
   }
 .owl-carousel-fullwidth #fourth.item {
-  background-image:url('/images/mesa-area-copy.jpg');
+  background-image:url('/images/home/w@-mesa-aerea.jpg');
   }
 .owl-carousel-fullwidth .item .fh5co-overlay {
   position: absolute;
