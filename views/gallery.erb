@@ -1,7 +1,14 @@
 <div class="fh5co-spacer fh5co-spacer-lg"></div>
 <div class="container">
   <div class="row">
+  <% folder = File.join(File.dirname(__FILE__), '/../public/images/gallery/') %>
+  <% Dir.new(folder).each do |file| %>
+    <% next if ['..', '.', '.DS_Store'].include? file  %>
     <div class="col-sm-12 col-md-6 col-lg-4">
+      <p><a href="images/gallery/<%= file %>" class="image-popup"><img src="images/gallery/<%= file %>" alt="Workaround Rosario" class="img-responsive img-rounded"></a></p>
+    </div>
+  <% end %>
+    <!-- <div class="col-sm-12 col-md-6 col-lg-4">
       <p><a href="images/pics/FullSizeRender 2.jpg" class="image-popup"><img src="images/pics/FullSizeRender 2.jpg" alt="Workaround Rosario" class="img-responsive img-rounded"></a></p>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4">
@@ -57,6 +64,6 @@
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4">
       <p><a href="images/pics/FullSizeRender.jpg" class="image-popup"><img src="images/pics/FullSizeRender.jpg" alt="Workaround Rosario" class="img-responsive img-rounded"></a></p>
-    </div>
+    </div> -->
   </div>
 </div>
