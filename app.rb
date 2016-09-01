@@ -20,6 +20,10 @@ Cuba.define do
     on "about" do
       render("about")
     end
+
+    on "gallery" do
+      render("gallery")
+    end
   end
 
   on post do
