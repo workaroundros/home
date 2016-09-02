@@ -6031,9 +6031,9 @@ a > img.fh5co-align-center {
 @media (max-width: 768px) {
   .text-header {
     color: white;
-    padding-top: 18px;
+    padding-top: 20px;
     font-family: "Montserrat", arial, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .table-header {
