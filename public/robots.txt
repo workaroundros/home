@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /images/*.jpg
+Sitemap: http://www.workaround.com.ar/sitemap.xml
