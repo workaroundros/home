@@ -6057,14 +6057,13 @@ a > img.fh5co-align-center {
   }
 
   .services {
-    font-size: 13px;
+    font-size: 20px !important;
     line-height: 25px;
     text-align: left;
     font-family: "Montserrat", arial, sans-serif;
     font-weight: 500;
     color: black;
     padding-bottom: 20px;
-    /*border-bottom: 1px solid orange;*/
   }
 }
 
@@ -6084,12 +6083,12 @@ a > img.fh5co-align-center {
     width: 10px;
     height: 30px;
     display: inline-block;
-    margin-left: 10%;
+    font-size: 20px !important;
   }
 
   .service-text {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 20px;
     vertical-align: 15%;
   }
 
@@ -6103,7 +6102,6 @@ a > img.fh5co-align-center {
     font-weight: 500;
     color: black;
     padding-bottom: 30px;
-    /*border-bottom: 1px solid orange;*/
   }
 }
 
@@ -6123,9 +6121,71 @@ a > img.fh5co-align-center {
 .no-bottom-padding { 
   /*padding-bottom: 0; */
 }
-.orange-item { border-left: 15px solid #F5876E; }
-.blue-item   { border-left: 15px solid #61A8DC; }
-.green-item  { border-left: 15px solid #8EBD40; }
-.purple-item { border-left: 15px solid #988CC3; }
-.gold-item   { border-left: 15px solid #D8C86E; }
-.silver-item { border-left: 15px solid #CCC;    }
+
+.orange-item   { border-left: 15px solid #fbb040; }
+.salmon-item   { border-left: 15px solid #F5876E; }
+.blue-item     { border-left: 15px solid #61A8DC; }
+.green-item    { border-left: 15px solid #8EBD40; }
+.purple-item   { border-left: 15px solid #988CC3; }
+.gold-item     { border-left: 15px solid #D8C86E; }
+.silver-item   { border-left: 15px solid #CCC;    }
+.darkgray-item { border-left: 15px solid #858585; }  
+
+.plan-details {
+  padding: 0 10px;
+  border: 1px solid #fbb040;
+  border-radius: 10px;
+  margin: 0 25px;
+  min-width: 20.64%;
+}
+
+.plans-div {
+  margin-top: 40px;
+}
+
+.plan-header {
+  background-color: #fbb040;
+  font-weight: bold;
+  border-radius: 9px 9px 0 0;
+  height: 79px;
+  padding: 1px;
+  border: 0;
+  margin: 0px -10px;
+}
+
+.mensual {
+  font-size: 1.3rem;
+  color: #9a9a9a;
+  font-weight: 300;
+}
+
+.no-padding {
+  padding: 0 !important;
+  min-height: 0;
+}
+
+#fh5co-features {
+  padding: 3em 0 !important;
+}
+
+.section-header {
+  background-color: #FBB040;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  height: 79px;
+  padding: 1px;
+  border: 0;
+  box-shadow: 8px -4px 20px 0px #c5c5c5;
+  margin-top: 10px;
+}
+
+.fb-image {
+  width: 48px;
+  background: #ffffffa6;
+  border-radius: 50px;
+}
+
+.office-meet-div {
+  color: #f9f9f9;
+}
