@@ -5893,15 +5893,10 @@ pre {
   }
 }
 
-.owl-carousel-fullwidth #second.item {
-  background-image:url('/images/home/w@-view.jpg');
-  }
-.owl-carousel-fullwidth #third.item {
-  background-image:url('/images/home/w@-space.jpg');
-  }
-.owl-carousel-fullwidth #fourth.item {
-  background-image:url('/images/home/w@-mesa-aerea.jpg');
-  }
+.owl-carousel-fullwidth #second.item { background-image:url('/images/home/w@-view.jpg'); }
+.owl-carousel-fullwidth #third.item  { background-image:url('/images/home/w@-space.jpg'); }
+.owl-carousel-fullwidth #fourth.item { background-image:url('/images/home/w@-mesa-aerea.jpg'); }
+.owl-carousel-fullwidth #fifth.item  { background-image:url('/images/home/w@-work-view.jpg'); }
 .owl-carousel-fullwidth .item .fh5co-overlay {
   position: absolute;
   top: 0;
