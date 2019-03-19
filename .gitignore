@@ -2,3 +2,4 @@
 .sass-cache
 dits/
 dist/
+node_modules/
