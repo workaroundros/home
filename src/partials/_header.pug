@@ -1,0 +1,42 @@
+header#fh5co-header(role='banner')
+  nav#nav-header.navbar.navbar-fixed-top(role='navigation')
+    #header-container.container-fluid
+      .navbar-header
+        // Mobile Toggle Menu Button
+        a.js-fh5co-nav-toggle.fh5co-nav-toggle(data-toggle='collapse', data-target='#fh5co-navbar', aria-expanded='false', aria-controls='navbar')
+          i
+        a.navbar-brand(id='#brand', href='/')
+          | Work
+          span.orange around
+      #fh5co-navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a.js-fh5co-nav-toggle-secondary(href='/#', data-toggle='collapse', data-target='#fh5co-navbar')
+              span
+                | Home 
+                span.border
+          li
+            a.top-menu-btn.js-fh5co-nav-toggle-secondary(href='/#plen', data-toggle='collapse', data-target='#fh5co-navbar', data-target-element='plen')
+              span
+                | Nuestros planes
+                span.border
+          li
+            a.top-menu-btn.js-fh5co-nav-toggle-secondary(href='https://www.facebook.com/messages/t/user:602091589950813', target='_blank', data-toggle='collapse', data-target='#fh5co-navbar', data-target-element='write')
+              span
+                | Escribinos
+                span.border
+          li
+            a.top-menu-btn.js-fh5co-nav-toggle-secondary(href='/#about', data-toggle='collapse', data-target='#fh5co-navbar', data-target-element='people')
+              span
+                | Quienes somos? 
+                span.border
+          li
+            a.top-menu-btn.js-fh5co-nav-toggle-secondary(href='/#gallery', data-toggle='collapse', data-target='#fh5co-navbar', data-target-element='people')
+              span
+                | Galería 
+                span.border
+          li(style='background: #eee;')
+            a.top-menu-btn(href='http://workaround.sytes.net/')
+              span
+                | Ingresar 
+                span.border
