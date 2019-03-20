@@ -62,5 +62,8 @@
     "webpack-dev-server": "^3.2.1",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.1.4"
-  }
+  },
+  "files": [
+    "dist/"
+  ]
 }
