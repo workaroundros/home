@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  devtool: 'sourcemap',
   resolve: {
     alias: {
       // jquery: 'jquery/src/jquery',

@@ -811,22 +811,22 @@ pre {
   position: relative;
 }
 .owl-carousel-fullwidth #first.item {
-  background-image: url('/images/home/w@-mesa.jpg');
+  background-image: url('../images/home/w@-mesa.jpg');
 }
 @media (max-width: 768px) {
   .owl-carousel-fullwidth #first.item {
-    background-image: url('/images/home/w@-mesa-small.jpg');
+    background-image: url('../images/home/w@-mesa-small.jpg');
   }
 }
 
 .owl-carousel-fullwidth #second.item {
-  background-image: url('/images/home/w@-view.jpg');
+  background-image: url('../images/home/w@-view.jpg');
 }
 .owl-carousel-fullwidth #third.item {
-  background-image: url('/images/home/w@-space.jpg');
+  background-image: url('../images/home/w@-space.jpg');
 }
 .owl-carousel-fullwidth #fourth.item {
-  background-image: url('/images/home/w@-mesa-aerea.jpg');
+  background-image: url('../images/home/w@-mesa-aerea.jpg');
 }
 .owl-carousel-fullwidth .item .fh5co-overlay {
   position: absolute;
@@ -1108,8 +1108,10 @@ a > img.fh5co-align-center {
   padding: 0 10px;
   border: 1px solid #fbb040;
   border-radius: 10px;
-  margin: 0 25px;
+  margin: 0 10px;
   min-width: 20.64%;
+  min-width: 18%;
+  margin-bottom: 25px;
 }
 
 .plans-div {
