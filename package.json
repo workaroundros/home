@@ -8,6 +8,8 @@
     "build:dev": "./node_modules/.bin/webpack --config webpack.conf.js",
     "serve": "webpack-dev-server  --config webpack.conf.js",
     "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "./deploy.sh",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
